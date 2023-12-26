@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./atmospedia.css">
+    <link rel="icon" href="./images/atmospedia.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3498a286cb.js" crossorigin="anonymous"></script>
+    <title>ATMOSPEDIA</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li id="logo">
+                <a href="./atmospedia.html">ATMOSPEDIA</a>
+            </li>
+            <li class="toggleBar" onclick="responsiveNavbar()">
+                <i id="iconContainer" class="fa fa-bars" onclick="toggleIcon()"></i>
+            </li>
+            <li class="nav-link">
+                <a href="./atmospedia.html">HOME</a>
+            </li>
+            <li class="nav-link">
+                <a href="./blog.html">BLOG</a>
+            </li>
+            <li class="nav-link">
+                <a href="./about us.html">ABOUT US</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <div class="overlayer">
+        <img src="./images/weather-forecast.jpg" alt="Your Image">
+        <div class="image-overlay">
+            <h2 class="real-header">A MINIMAL, COOL</h2>
+            <p>WEATHER FOR CONVEYANCE</p>
+            <a href="./blog.html" class="overlay-btn">EXPLORE</a>
+        </div>
+    </div>
+
+    <div class="container-icons">
+        <div class="box">
+            <i class="fa-solid fa-sun"></i>
+            <h3>SUN</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, dignissimos nostrum nulla corporis tempore reiciendis.
+            </p>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-cloud-rain"></i>
+            <h3>RAIN</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, dignissimos nostrum nulla corporis tempore reiciendis.
+            </p>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-cloud-bolt"></i>
+            <h3>THUNDER</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, dignissimos nostrum nulla corporis tempore reiciendis.
+            </p>
+        </div>
+    </div>
+
+    <div class="featured-content">
+        <h4 class="secondary-info">FEATURED CONTENT</h4>
+        <div class="underline"></div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, dignissimos nostrum nulla corporis tempore reiciendis, 
+            at et delectus quam, dolorem eligendi perferendis incidunt porro quae repudiandae fuga vero quis officia.
+        </p>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/DK_8w7q9IkQ?si=xdBHhl1lsdJGgkQd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        </div>
+
+    <div class="aside">
+        <div class="information">
+            <div class="real-info">
+                <h4 class="secondary-info">BLOG</h4>
+                <div class="underline"></div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae quas eius laborum inventore molestias. 
+                    Eius quae illum aspernatur atque, officia cum.
+                </p>
+                <div class="btn-container">
+                    <a href="./blog.html" class="btn btn-1">View More</a>
+                </div>
+            </div>
+            <div class="img"></div>
+        </div>
+
+        <div class="information">
+            <div class="real-info">
+                <h4 class="secondary-info">ABOUT US</h4>
+                <div class="underline"></div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae quas eius laborum inventore molestias. 
+                    Eius quae illum aspernatur atque, officia cum.
+                </p>
+                <div class="btn-container">
+                    <a href="./about us.html" class="btn btn-1">View More</a>
+                </div>
+            </div>
+            <div class="img-1"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="info">
+            <header>HEARD ENOUGH?</header>
+            <div class="underline"></div>
+            <p class="details">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere officiis iste harum ab, 
+                non odio maxime quo nam iure dignissimos ipsam quia accusamus in voluptates, ipsa, enim.
+            </p>
+            <div class="btn-container">
+                <a href="./blog.html" class="btn btn-1">BLOG</a>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-details">
+            <h5>Copyright 2024 <span>ATMOSPEDIA</span><br/>All rights reserved</h5>
+            <a href="#" class="privacy">Agreement and Privacy</a>
+        </div>
+        <div class="more-info">
+            <h4>ATMOSPEDIA</h4>
+            <a href="./about us.html">About Us</a>
+            <p>Team</p>
+            <p>Careers</p>
+        </div>
+        <div class="more-info">
+            <h4>ATMOSPEDIA</h4>
+            <a href="./about us.html">About Us</a>
+            <p>Team</p>
+            <p>Careers</p>
+        </div>
+    </footer>
+    <script>
+        let navLink = document.querySelectorAll('.nav-link');
+
+        function responsiveNavbar() {
+            for (var i = 0; i < navLink.length; i++) {
+                navLink[i].classList.toggle('active');
+            }
+        }
+
+        function toggleIcon() {
+            var iconContainer = document.getElementById('iconContainer');
+
+            if (iconContainer.classList.contains('fa-bars')) {
+                iconContainer.classList.remove('fa-bars');
+                iconContainer.classList.add('fa-times');
+            } else {
+                iconContainer.classList.remove('fa-times');
+                iconContainer.classList.add('fa-bars');
+            }
+        }
+
+    </script>
+</body>
+</html>
+
+
+
+
+

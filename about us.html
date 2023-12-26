@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./about us.css">
+    <link rel="icon" href="./images/atmospedia.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3498a286cb.js" crossorigin="anonymous"></script>
+    <title>ATMOSPEDIA</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li id="logo">
+                <a href="./atmospedia.html">ATMOSPEDIA</a>
+            </li>
+            <li class="toggleBar" onclick="responsiveNavbar()">
+                <i id="iconContainer" class="fa fa-bars" onclick="toggleIcon()"></i>
+            </li>
+            <li class="nav-link">
+                <a href="./atmospedia.html">HOME</a>
+            </li>
+            <li class="nav-link">
+                <a href="./blog.html">BLOG</a>
+            </li>
+            <li class="nav-link">
+                <a href="./about us.html">ABOUT US</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <div class="container-about">
+        <div class="info">
+            <header>ABOUT US</header>
+            <div class="underline"></div>
+            <img src="./images/real forecast.jpg" alt="weather-forecast" class="forecast-pic">
+            <p class="details">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere officiis iste harum ab,Lorem ipsum dolor 
+                non odio maxime quo nam iure dignissimos ipsam quia accusamus in voluptates, ipsa, enim.Lorem ipsum dolor
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere officiis iste harum ab.Lorem ipsum dolor
+        </div>
+    </div>
+
+    <div class="header">
+        <header>SUBSCRIBE TO OUR NEWSLETTER</header>
+        <div class="underline"></div>  
+    </div>
+    <div class="real-container">
+        <div class="form-container">
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+    
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+    
+                
+            </form>
+        </div>
+    </div>
+    <div class="btn-container">
+        <a href="#" class="btn btn-1">SUBSCRIBE</a>
+    </div>
+
+    <footer>
+        <div class="footer-details">
+            <h5>Copyright 2024 <span>ATMOSPEDIA</span><br/>All rights reserved</h5>
+            <a href="#" class="privacy">Agreement and Privacy</a>
+        </div>
+        <div class="more-info">
+            <h4>ATMOSPEDIA</h4>
+            <a href="./about us.html">About Us</a>
+            <p>Team</p>
+            <p>Careers</p>
+        </div>
+        <div class="more-info">
+            <h4>ATMOSPEDIA</h4>
+            <a href="./about us.html">About Us</a>
+            <p>Team</p>
+            <p>Careers</p>
+        </div>
+    </footer>
+    <script>
+        let navLink = document.querySelectorAll('.nav-link');
+
+        function responsiveNavbar() {
+            for (var i = 0; i < navLink.length; i++) {
+                navLink[i].classList.toggle('active');
+            }
+        }
+
+        function toggleIcon() {
+            var iconContainer = document.getElementById('iconContainer');
+
+            if (iconContainer.classList.contains('fa-bars')) {
+                iconContainer.classList.remove('fa-bars');
+                iconContainer.classList.add('fa-times');
+            } else {
+                iconContainer.classList.remove('fa-times');
+                iconContainer.classList.add('fa-bars');
+            }
+        }
+
+    </script>
+</body>
+</html>
+
+
+
+
+
